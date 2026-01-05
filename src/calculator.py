@@ -14,6 +14,6 @@ def divide(a, b):
 
 if __name__ == "__main__":
     print("Add:",add(10, 5))
-    print("substract:",substract(10, 5))
+    print("subtract:",subtract(10, 5))
     print("Multiply:",multiply(10, 5))
     print("Divide:",divide(10, 5))
