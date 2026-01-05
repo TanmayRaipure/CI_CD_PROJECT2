@@ -27,9 +27,13 @@ jobs:
                 pip install -r requirements.txt
 
             - name: Run unit tests
+              env:
+                PYTHONPATH: ${{ github.workspce }}
               run: pytest -v
 
             - name: Run Calculator script
+              env:
+                PYTHONPATH: ${{ github.workspce }}
               run: python src/calculator.py
 
     deploy:
